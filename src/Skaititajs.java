@@ -36,6 +36,11 @@ public class Skaititajs extends javax.swing.JFrame {
 
         btnPlusViens.setFont(new java.awt.Font("Tahoma", 0, 36)); // NOI18N
         btnPlusViens.setText("+1");
+        btnPlusViens.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnPlusViensActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -60,6 +65,15 @@ public class Skaititajs extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnPlusViensActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlusViensActionPerformed
+        System.out.println("Poga nospiesta!");
+        
+        tfSkaitlis.setText(Integer.parseInt(tfSkaitlis.getText()) + 1 + "");
+        
+        
+        
+    }//GEN-LAST:event_btnPlusViensActionPerformed
 
     /**
      * @param args the command line arguments
