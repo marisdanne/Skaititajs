@@ -69,7 +69,18 @@ public class Skaititajs extends javax.swing.JFrame {
     private void btnPlusViensActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPlusViensActionPerformed
         System.out.println("Poga nospiesta!");
         
-        tfSkaitlis.setText(Integer.parseInt(tfSkaitlis.getText()) + 1 + "");
+        String strSk = tfSkaitlis.getText();
+        int intSk = Integer.parseInt(strSk);
+        int sum;
+        
+        sum = intSk + 1;
+        
+        //tfSkaitlis.setText(Integer.toString(sum));
+        //tfSkaitlis.setText(String.valueOf(sum));
+        tfSkaitlis.setText(sum + "");
+        
+        
+        
         
         
         
